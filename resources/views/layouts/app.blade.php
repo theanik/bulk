@@ -320,7 +320,7 @@ if($user_meta['temp_user'] === true){
                     <li @if ($route=='settings') class="active" @endif><a href="{{ url('/settings') }}"> <i
                                     class="fa fa-gear"></i> Settings</a></li>
 
-                    <li @if ($route=='history') class="active" @endif><a href="{{ url('/history') }}"> <i
+                    <li @if ($route=='history') class="active" @endif><a href="{{ route('history.index') }}"> <i
                                     class="fa fa-home"></i> History</a></li>
                 @endif
             </ul>

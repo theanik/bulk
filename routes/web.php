@@ -105,6 +105,12 @@ Route::post('/settings/timezone/', 'PagesController@history')->name('saveTimezon
 
 Route::post('/rebrandly-domain', 'PagesController@rebrandlyDomain')->name('rebrandly.domain');
 
+//History Route
+
+Route::get('history','HisotryController@index')->name('history.index');
+Route::get('search_by_date','HisotryController@search_by_date')->name('search_by_date');
+Route::get('filter_by_group','HisotryController@filter_by_group')->name('filter_by_group');
+Route::get('search_data','HisotryController@search_data')->name('search_data');
 
 
 Route::post('/update-user/', 'AjaxController@updateUser');
